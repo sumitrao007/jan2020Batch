@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="Register" method="post">
+
+<label>Name: </label>&nbsp; <input type="text" name="name" placeholder="Enter the Full Name"><br>
+<label>Gender : </label>&nbsp; <input type="radio" name="gender" value="male">Male &nbsp; &nbsp; &nbsp; 
+<input type="radio" name="gender" value="female">Female <br>
+<label>Mobile NO : </label>&nbsp; <input type="number" name="mobileno" placeholder="Enter the Mobile Number"><br>
+<label>Email Id: </label>&nbsp; <input type="email" name="emailid" placeholder="Enter the Email ID "><br>
+
+<label>Degree:</label>&nbsp;&nbsp;
+<select name="degree">
+<option value="selectdegree">Select Degree </option>
+<option value="b.e.">B.E. </option>
+<option value="m.e.">M.E. </option>
+<option value="mtech">M.Tech </option>
+<option value="bcs">BCS </option>
+<option value="bca">BCA </option>
+<option value="mca">MCA </option>
+<option value="mcs">MCS </option>
+</select>
+<br>
+<label>Technology: </label>&nbsp;<br>
+<input type="checkbox" name="technology" value="corejava">Core Java
+<input type="checkbox" name="technology" value="advjava">Advanced Java
+<input type="checkbox" name="technology" value="spring">Spring
+<input type="checkbox" name="technology" value="angular7">Angular 7
+<input type="checkbox" name="technology" value="nodejs">Node JS
+<input type="checkbox" name="technology" value="android">Android
+<br><br>
+<label>Address: </label>&nbsp;
+<textarea rows="5" cols="30" name="address"> </textarea><br>
+<label>Password: </label>&nbsp;<input type="password" placeholder="Enter the Password" name="password"><br><br>
+
+<button type="submit" >Submit</button>
+
+
+</form>
+
+</body>
+</html>

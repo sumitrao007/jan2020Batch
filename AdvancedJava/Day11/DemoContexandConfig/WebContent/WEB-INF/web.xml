@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>DemoContexandConfig</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  <param-name>Institutename</param-name>
+  <param-value>Hefshine Software</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>Address</param-name>
+  <param-value>Official Head Pune</param-value>
+  </context-param>
+  
+  <servlet>
+    <description></description>
+    <display-name>CoreJavaServlet</display-name>
+    <servlet-name>CoreJavaServlet</servlet-name>
+    <servlet-class>com.hefshine.servlet.CoreJavaServlet</servlet-class>
+    
+    <init-param>
+    <param-name>Trainer1</param-name>
+    <param-value>Snehali Mam</param-value>
+    </init-param>
+    <init-param>
+    <param-name>Trainer2</param-name>
+    <param-value>Pratiksha Mam</param-value>
+    </init-param>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CoreJavaServlet</servlet-name>
+    <url-pattern>/CoreJavaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdvJavaServlet</display-name>
+    <servlet-name>AdvJavaServlet</servlet-name>
+    <servlet-class>com.hefshine.servlet.AdvJavaServlet</servlet-class>
+    
+    <init-param>
+    	
+    	<param-name>Trainer1</param-name>
+    	<param-value>Sumit Raokhande</param-value>
+    </init-param>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdvJavaServlet</servlet-name>
+    <url-pattern>/AdvJavaServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
